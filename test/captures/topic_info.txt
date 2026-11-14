@@ -1,0 +1,5 @@
+$ ros2 topic info /chatter
+Type: std_msgs/msg/String
+Publisher count: 1
+Subscription count: 1
+[exit 0]

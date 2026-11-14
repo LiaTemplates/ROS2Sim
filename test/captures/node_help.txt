@@ -1,0 +1,15 @@
+$ ros2 node --help
+usage: ros2 node [-h]
+                 Call `ros2 node <command> -h` for more detailed usage. ...
+
+Various node related sub-commands
+
+options:
+  -h, --help            show this help message and exit
+
+Commands:
+  info  Output information about a node
+  list  Output a list of available nodes
+
+  Call `ros2 node <command> -h` for more detailed usage.
+[exit 0]

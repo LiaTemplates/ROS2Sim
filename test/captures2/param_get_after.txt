@@ -1,0 +1,3 @@
+$ ros2 param get /turtlesim background_r
+Integer value is: 150
+[exit 0]

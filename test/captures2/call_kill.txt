@@ -1,0 +1,8 @@
+$ ros2 service call /kill turtlesim/srv/Kill {name: 'anna'}
+waiting for service to become available...
+requester: making request: turtlesim.srv.Kill_Request(name='anna')
+
+response:
+turtlesim.srv.Kill_Response()
+
+[exit 0]

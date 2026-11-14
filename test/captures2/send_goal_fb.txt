@@ -1,0 +1,492 @@
+$ ros2 action send_goal --feedback /turtle1/rotate_absolute turtlesim/action/RotateAbsolute {theta: -1.0}
+Waiting for an action server to become available...
+Sending goal:
+     theta: -1.0
+
+Feedback:
+    remaining: -2.552000045776367
+
+Goal accepted with ID: 9ae2918a2f49498f82672142f870ca00
+
+Feedback:
+    remaining: -2.5360000133514404
+
+Feedback:
+    remaining: -2.5199999809265137
+
+Feedback:
+    remaining: -2.503999948501587
+
+Feedback:
+    remaining: -2.48799991607666
+
+Feedback:
+    remaining: -2.4720001220703125
+
+Feedback:
+    remaining: -2.4559998512268066
+
+Feedback:
+    remaining: -2.440000057220459
+
+Feedback:
+    remaining: -2.4240000247955322
+
+Feedback:
+    remaining: -2.4079999923706055
+
+Feedback:
+    remaining: -2.3919999599456787
+
+Feedback:
+    remaining: -2.375999927520752
+
+Feedback:
+    remaining: -2.3600001335144043
+
+Feedback:
+    remaining: -2.3439998626708984
+
+Feedback:
+    remaining: -2.328000068664551
+
+Feedback:
+    remaining: -2.312000036239624
+
+Feedback:
+    remaining: -2.2960000038146973
+
+Feedback:
+    remaining: -2.2799999713897705
+
+Feedback:
+    remaining: -2.2639999389648438
+
+Feedback:
+    remaining: -2.248000144958496
+
+Feedback:
+    remaining: -2.2319998741149902
+
+Feedback:
+    remaining: -2.2160000801086426
+
+Feedback:
+    remaining: -2.200000047683716
+
+Feedback:
+    remaining: -2.184000015258789
+
+Feedback:
+    remaining: -2.1679999828338623
+
+Feedback:
+    remaining: -2.1519999504089355
+
+Feedback:
+    remaining: -2.136000156402588
+
+Feedback:
+    remaining: -2.119999885559082
+
+Feedback:
+    remaining: -2.1040000915527344
+
+Feedback:
+    remaining: -2.0880000591278076
+
+Feedback:
+    remaining: -2.072000026702881
+
+Feedback:
+    remaining: -2.055999994277954
+
+Feedback:
+    remaining: -2.0399999618530273
+
+Feedback:
+    remaining: -2.0240001678466797
+
+Feedback:
+    remaining: -2.007999897003174
+
+Feedback:
+    remaining: -1.9919999837875366
+
+Feedback:
+    remaining: -1.9760000705718994
+
+Feedback:
+    remaining: -1.9600000381469727
+
+Feedback:
+    remaining: -1.944000005722046
+
+Feedback:
+    remaining: -1.9279999732971191
+
+Feedback:
+    remaining: -1.9119999408721924
+
+Feedback:
+    remaining: -1.8960000276565552
+
+Feedback:
+    remaining: -1.8799999952316284
+
+Feedback:
+    remaining: -1.8640000820159912
+
+Feedback:
+    remaining: -1.8480000495910645
+
+Feedback:
+    remaining: -1.8320000171661377
+
+Feedback:
+    remaining: -1.815999984741211
+
+Feedback:
+    remaining: -1.7999999523162842
+
+Feedback:
+    remaining: -1.7839999198913574
+
+Feedback:
+    remaining: -1.7680000066757202
+
+Feedback:
+    remaining: -1.7519999742507935
+
+Feedback:
+    remaining: -1.7360000610351562
+
+Feedback:
+    remaining: -1.7200000286102295
+
+Feedback:
+    remaining: -1.7039999961853027
+
+Feedback:
+    remaining: -1.687999963760376
+
+Feedback:
+    remaining: -1.6719999313354492
+
+Feedback:
+    remaining: -1.656000018119812
+
+Feedback:
+    remaining: -1.6399999856948853
+
+Feedback:
+    remaining: -1.624000072479248
+
+Feedback:
+    remaining: -1.6080000400543213
+
+Feedback:
+    remaining: -1.5920000076293945
+
+Feedback:
+    remaining: -1.5759999752044678
+
+Feedback:
+    remaining: -1.559999942779541
+
+Feedback:
+    remaining: -1.5440000295639038
+
+Feedback:
+    remaining: -1.527999997138977
+
+Feedback:
+    remaining: -1.5120000839233398
+
+Feedback:
+    remaining: -1.496000051498413
+
+Feedback:
+    remaining: -1.4800000190734863
+
+Feedback:
+    remaining: -1.4639999866485596
+
+Feedback:
+    remaining: -1.4479999542236328
+
+Feedback:
+    remaining: -1.4320000410079956
+
+Feedback:
+    remaining: -1.4160000085830688
+
+Feedback:
+    remaining: -1.399999976158142
+
+Feedback:
+    remaining: -1.3840000629425049
+
+Feedback:
+    remaining: -1.3680000305175781
+
+Feedback:
+    remaining: -1.3519999980926514
+
+Feedback:
+    remaining: -1.3359999656677246
+
+Feedback:
+    remaining: -1.3199999332427979
+
+Feedback:
+    remaining: -1.3040000200271606
+
+Feedback:
+    remaining: -1.2879999876022339
+
+Feedback:
+    remaining: -1.2720000743865967
+
+Feedback:
+    remaining: -1.25600004196167
+
+Feedback:
+    remaining: -1.2400000095367432
+
+Feedback:
+    remaining: -1.2239999771118164
+
+Feedback:
+    remaining: -1.2079999446868896
+
+Feedback:
+    remaining: -1.1920000314712524
+
+Feedback:
+    remaining: -1.1759999990463257
+
+Feedback:
+    remaining: -1.159999966621399
+
+Feedback:
+    remaining: -1.1440000534057617
+
+Feedback:
+    remaining: -1.128000020980835
+
+Feedback:
+    remaining: -1.1119999885559082
+
+Feedback:
+    remaining: -1.0959999561309814
+
+Feedback:
+    remaining: -1.0800000429153442
+
+Feedback:
+    remaining: -1.0640000104904175
+
+Feedback:
+    remaining: -1.0479999780654907
+
+Feedback:
+    remaining: -1.031999945640564
+
+Feedback:
+    remaining: -1.0160000324249268
+
+Feedback:
+    remaining: -1.0
+
+Feedback:
+    remaining: -0.984000027179718
+
+Feedback:
+    remaining: -0.9679999947547913
+
+Feedback:
+    remaining: -0.9520000219345093
+
+Feedback:
+    remaining: -0.9359999895095825
+
+Feedback:
+    remaining: -0.9200000166893005
+
+Feedback:
+    remaining: -0.9039999842643738
+
+Feedback:
+    remaining: -0.8880000114440918
+
+Feedback:
+    remaining: -0.871999979019165
+
+Feedback:
+    remaining: -0.8560000061988831
+
+Feedback:
+    remaining: -0.8400000333786011
+
+Feedback:
+    remaining: -0.8240000009536743
+
+Feedback:
+    remaining: -0.8079999685287476
+
+Feedback:
+    remaining: -0.7919999957084656
+
+Feedback:
+    remaining: -0.7760000228881836
+
+Feedback:
+    remaining: -0.7599999904632568
+
+Feedback:
+    remaining: -0.7439999580383301
+
+Feedback:
+    remaining: -0.7279999852180481
+
+Feedback:
+    remaining: -0.7120000123977661
+
+Feedback:
+    remaining: -0.6959999799728394
+
+Feedback:
+    remaining: -0.6800000071525574
+
+Feedback:
+    remaining: -0.6640000343322754
+
+Feedback:
+    remaining: -0.6480000019073486
+
+Feedback:
+    remaining: -0.6319999694824219
+
+Feedback:
+    remaining: -0.6159999966621399
+
+Feedback:
+    remaining: -0.6000000238418579
+
+Feedback:
+    remaining: -0.5839999914169312
+
+Feedback:
+    remaining: -0.5679999589920044
+
+Feedback:
+    remaining: -0.5519999861717224
+
+Feedback:
+    remaining: -0.5360000133514404
+
+Feedback:
+    remaining: -0.5199999809265137
+
+Feedback:
+    remaining: -0.5040000081062317
+
+Feedback:
+    remaining: -0.48799997568130493
+
+Feedback:
+    remaining: -0.47200000286102295
+
+Feedback:
+    remaining: -0.4559999704360962
+
+Feedback:
+    remaining: -0.4399999976158142
+
+Feedback:
+    remaining: -0.4240000247955322
+
+Feedback:
+    remaining: -0.40799999237060547
+
+Feedback:
+    remaining: -0.3920000195503235
+
+Feedback:
+    remaining: -0.37599998712539673
+
+Feedback:
+    remaining: -0.36000001430511475
+
+Feedback:
+    remaining: -0.343999981880188
+
+Feedback:
+    remaining: -0.328000009059906
+
+Feedback:
+    remaining: -0.31199997663497925
+
+Feedback:
+    remaining: -0.29600000381469727
+
+Feedback:
+    remaining: -0.2799999713897705
+
+Feedback:
+    remaining: -0.2639999985694885
+
+Feedback:
+    remaining: -0.24800002574920654
+
+Feedback:
+    remaining: -0.23199999332427979
+
+Feedback:
+    remaining: -0.2160000205039978
+
+Feedback:
+    remaining: -0.19999998807907104
+
+Feedback:
+    remaining: -0.18400001525878906
+
+Feedback:
+    remaining: -0.1679999828338623
+
+Feedback:
+    remaining: -0.15200001001358032
+
+Feedback:
+    remaining: -0.13599997758865356
+
+Feedback:
+    remaining: -0.12000000476837158
+
+Feedback:
+    remaining: -0.10399997234344482
+
+Feedback:
+    remaining: -0.08799999952316284
+
+Feedback:
+    remaining: -0.07200002670288086
+
+Feedback:
+    remaining: -0.0559999942779541
+
+Feedback:
+    remaining: -0.04000002145767212
+
+Feedback:
+    remaining: -0.02399998903274536
+
+Feedback:
+    remaining: -0.008000016212463379
+
+Result:
+    delta: 2.5439999103546143
+
+Goal finished with status: SUCCEEDED
+[exit 0]

@@ -1,0 +1,3 @@
+$ ros2 topic find std_msgs/msg/String
+/chatter
+[exit 0]

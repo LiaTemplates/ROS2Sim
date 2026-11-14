@@ -1,0 +1,3 @@
+$ ros2 param set /turtlesim background_r hallo
+Setting parameter failed: Wrong parameter type, parameter {background_r} is of type {integer}, setting it to {string} is not allowed.
+[exit 0]

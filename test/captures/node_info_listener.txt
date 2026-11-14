@@ -1,0 +1,23 @@
+$ ros2 node info /listener
+/listener
+  Subscribers:
+    /chatter: std_msgs/msg/String
+    /parameter_events: rcl_interfaces/msg/ParameterEvent
+  Publishers:
+    /parameter_events: rcl_interfaces/msg/ParameterEvent
+    /rosout: rcl_interfaces/msg/Log
+  Service Servers:
+    /listener/describe_parameters: rcl_interfaces/srv/DescribeParameters
+    /listener/get_parameter_types: rcl_interfaces/srv/GetParameterTypes
+    /listener/get_parameters: rcl_interfaces/srv/GetParameters
+    /listener/get_type_description: type_description_interfaces/srv/GetTypeDescription
+    /listener/list_parameters: rcl_interfaces/srv/ListParameters
+    /listener/set_parameters: rcl_interfaces/srv/SetParameters
+    /listener/set_parameters_atomically: rcl_interfaces/srv/SetParametersAtomically
+  Service Clients:
+
+  Action Servers:
+
+  Action Clients:
+
+[exit 0]

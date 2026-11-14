@@ -1,0 +1,3 @@
+$ ros2 topic type /chatter
+std_msgs/msg/String
+[exit 0]

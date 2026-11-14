@@ -1,0 +1,10 @@
+$ ros2 run turtlesim turtlesim_node
+[INFO] [1794603125.573140907] [turtlesim]: Starting turtlesim with node name /turtlesim
+[INFO] [1794603125.578193423] [turtlesim]: Spawning turtle [turtle1] at x=[5.544445], y=[5.544445], theta=[0.000000]
+[INFO] [1794603143.039634776] [turtlesim]: Rotation goal completed successfully
+[INFO] [1794603147.007647524] [turtlesim]: Rotation goal completed successfully
+[INFO] [1794637665.549224282] [turtlesim]: Rotation goal completed successfully
+[INFO] [1794637668.476836215] [turtlesim]: Rotation goal canceled
+[WARN] [1794637670.285367786] [turtlesim]: Rotation goal received before a previous goal finished. Aborting previous goal
+[INFO] [1794637671.725537804] [turtlesim]: Rotation goal completed successfully
+[INFO] [1794637722.854925872] [rclcpp]: signal_handler(SIGINT/SIGTERM)

@@ -1,0 +1,18 @@
+$ ros2 action --help
+usage: ros2 action [-h]
+                   Call `ros2 action <command> -h` for more detailed usage.
+                   ...
+
+Various action related sub-commands
+
+options:
+  -h, --help            show this help message and exit
+
+Commands:
+  info       Print information about an action
+  list       Output a list of action names
+  send_goal  Send an action goal
+  type       Print a action's type
+
+  Call `ros2 action <command> -h` for more detailed usage.
+[exit 0]

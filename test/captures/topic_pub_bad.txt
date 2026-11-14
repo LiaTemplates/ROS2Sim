@@ -1,0 +1,3 @@
+$ ros2 topic pub /x std_msgs/msg/String {dat: 1}
+Failed to populate field: 'String' object has no attribute 'dat'
+[exit 1]

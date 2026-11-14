@@ -1,0 +1,3 @@
+$ ros2 param set /talker foo 3
+Setting parameter failed: parameter 'foo' cannot be set because it was not declared
+[exit 0]

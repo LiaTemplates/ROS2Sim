@@ -1,0 +1,6 @@
+$ ros2 topic echo --once /turtle1/color_sensor
+r: 255
+g: 255
+b: 255
+---
+[exit 0]

@@ -1,0 +1,6 @@
+$ ros2 topic list -t
+/chatter [std_msgs/msg/String]
+/chatter2 [std_msgs/msg/String]
+/parameter_events [rcl_interfaces/msg/ParameterEvent]
+/rosout [rcl_interfaces/msg/Log]
+[exit 0]

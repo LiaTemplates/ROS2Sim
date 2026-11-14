@@ -1,0 +1,3 @@
+$ ros2 param get /turtlesim background_g
+Integer value is: 86
+[exit 0]

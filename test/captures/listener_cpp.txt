@@ -1,0 +1,3 @@
+$ ros2 run demo_nodes_cpp listener
+[INFO] [1794598971.895758594] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[exit 124]

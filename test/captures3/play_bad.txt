@@ -1,0 +1,23 @@
+$ ros2 bag play nix
+usage: ros2 bag play [-h] [-s {mcap,sqlite3}] [-i uri [storage_id ...]]
+                     [--read-ahead-queue-size READ_AHEAD_QUEUE_SIZE] [-r RATE]
+                     [--topics topic [topic ...]]
+                     [--services service [service ...]] [-e REGEX]
+                     [-x EXCLUDE_REGEX] [--exclude-topics topic [topic ...]]
+                     [--exclude-services service [service ...]]
+                     [--qos-profile-overrides-path QOS_PROFILE_OVERRIDES_PATH]
+                     [-l] [--remap REMAP [REMAP ...]]
+                     [--storage-config-file STORAGE_CONFIG_FILE] [--clock [Hz]
+                     | --clock-topics CLOCK_TOPICS [CLOCK_TOPICS ...] |
+                     --clock-topics-all] [-d DELAY]
+                     [--playback-duration PLAYBACK_DURATION]
+                     [--playback-until-sec PLAYBACK_UNTIL_SEC | --playback-until-nsec PLAYBACK_UNTIL_NSEC]
+                     [--disable-keyboard-controls] [-p]
+                     [--start-offset START_OFFSET]
+                     [--wait-for-all-acked TIMEOUT] [--disable-loan-message]
+                     [--publish-service-requests]
+                     [--service-requests-source {service_introspection,client_introspection}]
+                     [--log-level {debug,info,warn,error,fatal}]
+                     [bag_path]
+ros2 bag play: error: argument bag_path: Bag path 'nix' does not exist!
+[exit 2]

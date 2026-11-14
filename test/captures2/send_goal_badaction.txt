@@ -1,0 +1,4 @@
+$ ros2 action send_goal /nix turtlesim/action/RotateAbsolute {theta: 1}
+Waiting for an action server to become available...
+Failed to check if action server is available: rcl node's context is invalid, at ./src/rcl/node.c:404
+[exit 124]

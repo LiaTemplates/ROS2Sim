@@ -1,0 +1,8 @@
+$ ros2 service call /turtle1/teleport_absolute turtlesim/srv/TeleportAbsolute {x: 1.0, y: 1.0, theta: 0.0}
+waiting for service to become available...
+requester: making request: turtlesim.srv.TeleportAbsolute_Request(x=1.0, y=1.0, theta=0.0)
+
+response:
+turtlesim.srv.TeleportAbsolute_Response()
+
+[exit 0]

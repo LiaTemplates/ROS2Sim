@@ -1,0 +1,17 @@
+$ ros2 bag record /chatter /turtle1/pose -o fahrt1
+[WARN] [ros2bag]: Positional "topics" argument deprecated. Please use optional "--topics" argument instead.
+stdin is not a terminal device. Keyboard handling disabled.[INFO] [1794640634.260176552] [rosbag2_recorder]: Press SPACE for pausing/resuming
+[INFO] [1794640634.260253211] [rosbag2_recorder]: Event publisher thread: Started
+[INFO] [1794640634.264067973] [rosbag2_recorder]: Starting recording to 'fahrt1'
+[INFO] [1794640634.266328455] [rosbag2_recorder]: Listening for topics...
+[INFO] [1794640634.266359765] [rosbag2_recorder]: Recording...
+[INFO] [1794640634.266395878] [rosbag2_recorder]: Topics discovery started.
+[INFO] [1794640634.707894886] [rosbag2_recorder]: Subscribed to topic '/chatter'
+[INFO] [1794640634.713980367] [rosbag2_recorder]: Subscribed to topic '/turtle1/pose'
+[INFO] [1794640634.714075029] [rosbag2_recorder]: All requested topics are subscribed. Stopping discovery...
+[INFO] [1794640634.714102821] [rosbag2_recorder]: Topics discovery stopped.
+[INFO] [1794640639.315684871] [rosbag2_recorder]: Pausing recording.
+[INFO] [1794640639.315869069] [rosbag2_cpp]: Writing remaining messages from cache to the bag. It may take a while
+[INFO] [1794640639.328342404] [rosbag2_recorder]: Recording stopped
+[INFO] [1794640639.329823288] [rosbag2_recorder]: Event publisher thread: Exited
+[exit 124]

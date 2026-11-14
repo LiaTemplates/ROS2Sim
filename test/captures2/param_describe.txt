@@ -1,0 +1,9 @@
+$ ros2 param describe /turtlesim background_r
+Parameter name: background_r
+  Type: integer
+  Description: Red channel of the background color
+  Constraints:
+    Min value: 0
+    Max value: 255
+    Step: 1
+[exit 0]

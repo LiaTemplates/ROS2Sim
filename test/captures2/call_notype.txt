@@ -1,0 +1,5 @@
+$ ros2 service call /clear
+usage: ros2 service call [-h] [--stdin] [-r N]
+                         service_name service_type [values]
+ros2 service call: error: the following arguments are required: service_type
+[exit 2]

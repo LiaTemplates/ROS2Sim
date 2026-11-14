@@ -1,0 +1,12 @@
+$ ros2 service type --help
+usage: ros2 service type [-h] service_name
+
+Output a service's type
+
+positional arguments:
+  service_name  Name of the ROS service to get type (e.g.
+                '/talker/list_parameters')
+
+options:
+  -h, --help    show this help message and exit
+[exit 0]

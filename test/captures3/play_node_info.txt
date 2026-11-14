@@ -1,0 +1,3 @@
+$ ros2 node info /rosbag2_player
+Unable to find node '/rosbag2_player'
+[exit 1]

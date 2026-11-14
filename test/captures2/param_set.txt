@@ -1,0 +1,3 @@
+$ ros2 param set /turtlesim background_r 150
+Set parameter successful
+[exit 0]

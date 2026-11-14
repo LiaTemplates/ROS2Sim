@@ -1,0 +1,17 @@
+$ ros2 daemon --help
+usage: ros2 daemon [-h]
+                   Call `ros2 daemon <command> -h` for more detailed usage.
+                   ...
+
+Various daemon related sub-commands
+
+options:
+  -h, --help            show this help message and exit
+
+Commands:
+  start   Start the daemon if it isn't running
+  status  Output the status of the daemon
+  stop    Stop the daemon if it is running
+
+  Call `ros2 daemon <command> -h` for more detailed usage.
+[exit 0]

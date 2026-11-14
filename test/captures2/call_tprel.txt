@@ -1,0 +1,8 @@
+$ ros2 service call /turtle1/teleport_relative turtlesim/srv/TeleportRelative {linear: 2.0, angular: 1.57}
+waiting for service to become available...
+requester: making request: turtlesim.srv.TeleportRelative_Request(linear=2.0, angular=1.57)
+
+response:
+turtlesim.srv.TeleportRelative_Response()
+
+[exit 0]

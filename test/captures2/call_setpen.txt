@@ -1,0 +1,8 @@
+$ ros2 service call /turtle1/set_pen turtlesim/srv/SetPen {r: 255, g: 0, b: 0, width: 5, 'off': 0}
+waiting for service to become available...
+requester: making request: turtlesim.srv.SetPen_Request(r=255, g=0, b=0, width=5, off=0)
+
+response:
+turtlesim.srv.SetPen_Response()
+
+[exit 0]

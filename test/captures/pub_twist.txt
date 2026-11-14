@@ -1,0 +1,4 @@
+$ ros2 topic pub --once /turtle1/cmd_vel geometry_msgs/msg/Twist {linear: {x: 2.0}, angular: {z: 1.8}}
+Waiting for at least 1 matching subscription(s)...
+failed to get subscription count: publisher's context is invalid, at ./src/rcl/publisher.c:423
+[exit 124]

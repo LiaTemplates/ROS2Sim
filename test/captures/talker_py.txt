@@ -1,0 +1,4 @@
+$ ros2 run demo_nodes_py talker --ros-args -r __node:=talker2 -r chatter:=chatter2
+[INFO] [1794598969.952237652] [talker2]: Publishing: "Hello World: 0"
+[INFO] [1794598970.931073273] [talker2]: Publishing: "Hello World: 1"
+[exit 124]

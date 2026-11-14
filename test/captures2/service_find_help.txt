@@ -1,0 +1,15 @@
+$ ros2 service find --help
+usage: ros2 service find [-h] [-c] [--include-hidden-services] service_type
+
+Output a list of available services of a given type
+
+positional arguments:
+  service_type          Name of the ROS service type to filter for (e.g.
+                        'rcl_interfaces/srv/ListParameters')
+
+options:
+  -h, --help            show this help message and exit
+  -c, --count-services  Only display the number of services discovered
+  --include-hidden-services
+                        Consider hidden services as well
+[exit 0]

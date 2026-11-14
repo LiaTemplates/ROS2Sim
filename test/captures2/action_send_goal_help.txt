@@ -1,0 +1,19 @@
+$ ros2 action send_goal --help
+usage: ros2 action send_goal [-h] [--stdin] [-f] [-t N]
+                             action_name action_type [goal]
+
+Send an action goal
+
+positional arguments:
+  action_name        Name of the ROS action (e.g. '/fibonacci')
+  action_type        Type of the ROS action (e.g.
+                     'example_interfaces/action/Fibonacci')
+  goal               Goal request values in YAML format (e.g. '{order: 10}')
+
+options:
+  -h, --help         show this help message and exit
+  --stdin            Read goal from standard input
+  -f, --feedback     Echo feedback messages for the goal
+  -t N, --timeout N  Wait for N seconds until server becomes available and
+                     goal is completed (default waits indefinitely)
+[exit 0]

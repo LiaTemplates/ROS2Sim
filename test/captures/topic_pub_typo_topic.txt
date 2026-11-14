@@ -1,0 +1,7 @@
+$ ros2 topic pub /hallo std_msgs/msg/Int32 {data: 3}
+publisher: beginning loop
+publishing #1: std_msgs.msg.Int32(data=3)
+
+publishing #2: std_msgs.msg.Int32(data=3)
+
+[exit 124]

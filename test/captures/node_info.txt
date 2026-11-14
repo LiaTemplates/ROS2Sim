@@ -1,0 +1,23 @@
+$ ros2 node info /talker
+/talker
+  Subscribers:
+    /parameter_events: rcl_interfaces/msg/ParameterEvent
+  Publishers:
+    /chatter: std_msgs/msg/String
+    /parameter_events: rcl_interfaces/msg/ParameterEvent
+    /rosout: rcl_interfaces/msg/Log
+  Service Servers:
+    /talker/describe_parameters: rcl_interfaces/srv/DescribeParameters
+    /talker/get_parameter_types: rcl_interfaces/srv/GetParameterTypes
+    /talker/get_parameters: rcl_interfaces/srv/GetParameters
+    /talker/get_type_description: type_description_interfaces/srv/GetTypeDescription
+    /talker/list_parameters: rcl_interfaces/srv/ListParameters
+    /talker/set_parameters: rcl_interfaces/srv/SetParameters
+    /talker/set_parameters_atomically: rcl_interfaces/srv/SetParametersAtomically
+  Service Clients:
+
+  Action Servers:
+
+  Action Clients:
+
+[exit 0]

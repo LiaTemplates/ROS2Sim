@@ -1,0 +1,10 @@
+[0m[INFO] [1794640825.797795364] [rosbag2_recorder]: Press SPACE for pausing/resuming[0m
+[0m[INFO] [1794640825.797804340] [rosbag2_recorder]: Event publisher thread: Started[0m
+[0m[INFO] [1794640825.801016438] [rosbag2_recorder]: Starting recording to 'keytest'[0m
+[0m[INFO] [1794640825.802237468] [rosbag2_recorder]: Listening for topics...[0m
+[0m[INFO] [1794640825.802281155] [rosbag2_recorder]: Recording...[0m
+[0m[INFO] [1794640825.802270664] [rosbag2_recorder]: Topics discovery started.[0m
+[0m[INFO] [1794640827.362448129] [rosbag2_recorder]: Pausing recording.[0m
+[0m[INFO] [1794640828.364608377] [rosbag2_recorder]: Resuming recording.[0m
+
+Session terminated, killing shell... ...killed.

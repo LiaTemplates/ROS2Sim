@@ -1,0 +1,3 @@
+$ ros2 topic bw /chatter
+WARNING: topic [/chatter] does not appear to be published yet
+[exit 124]

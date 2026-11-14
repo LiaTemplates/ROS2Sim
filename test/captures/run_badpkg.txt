@@ -1,0 +1,3 @@
+$ ros2 run demo_node talker
+Package 'demo_node' not found
+[exit 1]

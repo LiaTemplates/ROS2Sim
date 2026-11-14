@@ -1,0 +1,3 @@
+$ ros2 topic pub /x std_msgs/msg/Strin {data: 1}
+The passed message type is invalid
+[exit 1]

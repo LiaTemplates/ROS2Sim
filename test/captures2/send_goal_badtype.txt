@@ -1,0 +1,3 @@
+$ ros2 action send_goal /turtle1/rotate_absolute turtlesim/action/RotateAbsolut {theta: 1}
+The passed action type is invalid
+[exit 1]

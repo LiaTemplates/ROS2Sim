@@ -1,0 +1,15 @@
+$ ros2 pkg executables demo_nodes_py
+demo_nodes_py add_two_ints_client
+demo_nodes_py add_two_ints_client_async
+demo_nodes_py add_two_ints_server
+demo_nodes_py async_param_client
+demo_nodes_py introspection
+demo_nodes_py listener
+demo_nodes_py listener_qos
+demo_nodes_py listener_serialized
+demo_nodes_py matched_event_detect
+demo_nodes_py set_parameters_callback
+demo_nodes_py talker
+demo_nodes_py talker_qos
+demo_nodes_py use_logger_service
+[exit 0]

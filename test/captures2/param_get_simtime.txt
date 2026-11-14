@@ -1,0 +1,3 @@
+$ ros2 param get /turtlesim use_sim_time
+Boolean value is: False
+[exit 0]

@@ -1,0 +1,3 @@
+$ ros2 service type /spawn
+turtlesim/srv/Spawn
+[exit 0]

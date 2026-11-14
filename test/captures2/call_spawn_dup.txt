@@ -1,0 +1,8 @@
+$ ros2 service call /spawn turtlesim/srv/Spawn {x: 8, y: 3, name: 'anna'}
+waiting for service to become available...
+requester: making request: turtlesim.srv.Spawn_Request(x=8.0, y=3.0, theta=0.0, name='anna')
+
+response:
+turtlesim.srv.Spawn_Response(name='')
+
+[exit 0]

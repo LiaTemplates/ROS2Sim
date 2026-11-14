@@ -1,0 +1,3 @@
+$ ros2 param get /turtlesim nix
+Parameter not set
+[exit 1]

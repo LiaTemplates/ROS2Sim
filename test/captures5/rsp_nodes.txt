@@ -1,0 +1,3 @@
+$ ros2 node list
+/robot_state_publisher
+[exit 0]

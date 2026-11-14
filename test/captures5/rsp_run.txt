@@ -1,0 +1,2 @@
+[INFO] [1794649962.701142894] [robot_state_publisher]: Robot initialized
+[INFO] [1794649987.479945260] [rclcpp]: signal_handler(SIGINT/SIGTERM)

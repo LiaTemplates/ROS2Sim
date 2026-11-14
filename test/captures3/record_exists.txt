@@ -1,0 +1,4 @@
+$ ros2 bag record /chatter -o fahrt1
+[WARN] [ros2bag]: Positional "topics" argument deprecated. Please use optional "--topics" argument instead.
+[ERROR] [ros2bag]: Output folder 'fahrt1' already exists.
+[exit 1]

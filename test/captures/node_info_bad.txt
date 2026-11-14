@@ -1,0 +1,3 @@
+$ ros2 node info /nix
+Unable to find node '/nix'
+[exit 1]

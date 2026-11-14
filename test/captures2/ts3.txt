@@ -1,0 +1,7 @@
+[INFO] [1794637931.760636012] [turtlesim]: Starting turtlesim with node name /turtlesim
+[INFO] [1794637931.764476451] [turtlesim]: Spawning turtle [turtle1] at x=[5.544445], y=[5.544445], theta=[0.000000]
+[WARN] [1794637936.640116472] [turtlesim.rclcpp_action]: Failed to send cancel response 0cccb155-b040-4fb7-903d-bc0338484377 (timeout): client will not receive response, at ./src/rmw_response.cpp:153, at ./src/rcl/service.c:400
+[INFO] [1794637936.640498340] [turtlesim]: Rotation goal canceled
+[INFO] [1794637939.698095787] [turtlesim]: Rotation goal completed successfully
+[WARN] [1794637956.514006402] [turtlesim]: Oh no! I hit the wall! (Clamping from [x=20.000000, y=10.088889])
+[INFO] [1794637957.696335242] [rclcpp]: signal_handler(SIGINT/SIGTERM)

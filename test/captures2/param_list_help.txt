@@ -1,0 +1,27 @@
+$ ros2 param list --help
+usage: ros2 param list [-h] [--spin-time SPIN_TIME] [-s] [--no-daemon]
+                       [--filter FILTER] [--include-hidden-nodes]
+                       [--param-prefixes PARAM_PREFIXES [PARAM_PREFIXES ...]]
+                       [--param-type]
+                       [node_name]
+
+Output a list of available parameters
+
+positional arguments:
+  node_name             Name of the ROS node
+
+options:
+  -h, --help            show this help message and exit
+  --spin-time SPIN_TIME
+                        Spin time in seconds to wait for discovery (only
+                        applies when not using an already running daemon)
+  -s, --use-sim-time    Enable ROS simulation time
+  --no-daemon           Do not spawn nor use an already running daemon
+  --filter FILTER       Only parameters matching the regex expression will be
+                        showed. Supports `re` regex syntax.
+  --include-hidden-nodes
+                        Consider hidden nodes as well
+  --param-prefixes PARAM_PREFIXES [PARAM_PREFIXES ...]
+                        Only list parameters with the provided prefixes
+  --param-type          Print parameter types with parameter names
+[exit 0]

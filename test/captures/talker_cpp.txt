@@ -1,0 +1,6 @@
+$ ros2 run demo_nodes_cpp talker
+[INFO] [1794598968.130040437] [talker]: Publishing: 'Hello World: 1'
+[INFO] [1794598969.130030716] [talker]: Publishing: 'Hello World: 2'
+[INFO] [1794598970.129982724] [talker]: Publishing: 'Hello World: 3'
+[INFO] [1794598970.391776810] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[exit 124]

@@ -1,0 +1,5 @@
+$ ros2 topic list
+/chatter
+/parameter_events
+/rosout
+[exit 0]

@@ -1,0 +1,15 @@
+
+Files:             raumfahrt_0.mcap
+Bag size:          818.2 KiB
+Storage id:        mcap
+ROS Distro:        jazzy
+Duration:          23.953454463s
+Start:             Nov 14 2026 09:10:40.944221644 (1794643840.944221644)
+End:               Nov 14 2026 09:11:04.897676107 (1794643864.897676107)
+Messages:          1188
+Topic information: Topic: /odom | Type: nav_msgs/msg/Odometry | Count: 475 | Serialization Format: cdr
+                   Topic: /scan | Type: sensor_msgs/msg/LaserScan | Count: 237 | Serialization Format: cdr
+                   Topic: /tf | Type: tf2_msgs/msg/TFMessage | Count: 475 | Serialization Format: cdr
+                   Topic: /tf_static | Type: tf2_msgs/msg/TFMessage | Count: 1 | Serialization Format: cdr
+Service:           0
+Service information: 

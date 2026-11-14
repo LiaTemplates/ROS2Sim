@@ -1,0 +1,4 @@
+$ ros2 run demo_nodes_cpp listener --ros-args -r chatter:=hallo
+[INFO] [1794599086.185951977] [listener]: I heard: [Hi]
+[INFO] [1794599103.001555200] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[exit 124]

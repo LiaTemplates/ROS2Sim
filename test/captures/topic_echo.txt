@@ -1,0 +1,6 @@
+$ ros2 topic echo /chatter
+data: 'Hello World: 7'
+---
+data: 'Hello World: 8'
+---
+[exit 124]

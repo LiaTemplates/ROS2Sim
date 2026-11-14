@@ -1,0 +1,5 @@
+[INFO] [1794644067.480661724] [static_transform_publisher_02UZJP5rxhQDuxmR]: Spinning until stopped - publishing transform
+translation: ('1.000000', '2.000000', '0.500000')
+rotation: ('0.000000', '0.000000', '0.706825', '0.707388')
+from 'welt' to 'kamera'
+[INFO] [1794644071.244928242] [rclcpp]: signal_handler(SIGINT/SIGTERM)

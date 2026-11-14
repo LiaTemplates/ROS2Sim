@@ -1,0 +1,12 @@
+$ ros2 run turtlesim turtlesim_node
+[INFO] [1794603015.934567878] [turtlesim]: Starting turtlesim with node name /turtlesim
+[INFO] [1794603015.939244972] [turtlesim]: Spawning turtle [turtle1] at x=[5.544445], y=[5.544445], theta=[0.000000]
+[WARN] [1794603030.019388541] [rclcpp]: Failed to get parameters: nix
+[INFO] [1794603062.001563572] [turtlesim]: Spawning turtle [turtle2] at x=[2.000000], y=[2.000000], theta=[0.200000]
+[INFO] [1794603064.702506485] [turtlesim]: Spawning turtle [anna] at x=[8.000000], y=[3.000000], theta=[0.000000]
+[ERROR] [1794603065.641199772] [turtlesim]: A turtle named [anna] already exists
+[INFO] [1794603073.977715667] [turtlesim]: Clearing turtlesim.
+[ERROR] [1794603076.633043863] [turtlesim]: Tried to kill turtle [nix], which does not exist
+[INFO] [1794603079.625851383] [turtlesim]: Resetting turtlesim.
+[INFO] [1794603079.642949349] [turtlesim]: Spawning turtle [turtle1] at x=[5.544445], y=[5.544445], theta=[0.000000]
+[INFO] [1794603135.680653345] [rclcpp]: signal_handler(SIGINT/SIGTERM)

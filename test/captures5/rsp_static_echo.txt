@@ -1,0 +1,2 @@
+$ ros2 topic echo --once --qos-durability transient_local /tf_static
+[exit 124]

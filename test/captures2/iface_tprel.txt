@@ -1,0 +1,5 @@
+$ ros2 interface show turtlesim/srv/TeleportRelative
+float32 linear
+float32 angular
+---
+[exit 0]

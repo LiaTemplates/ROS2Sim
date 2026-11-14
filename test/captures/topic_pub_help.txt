@@ -1,0 +1,76 @@
+$ ros2 topic pub --help
+usage: ros2 topic pub [-h] [--stdin] [-r N] [-p N] [-1 | -t TIMES]
+                      [-w WAIT_MATCHING_SUBSCRIPTIONS]
+                      [--max-wait-time-secs MAX_WAIT_TIME_SECS]
+                      [--keep-alive N] [-n NODE_NAME]
+                      [--qos-profile {unknown,default,system_default,sensor_data,services_default,parameters,parameter_events,action_status_default,best_available}]
+                      [--qos-depth N]
+                      [--qos-history {system_default,keep_last,keep_all,unknown}]
+                      [--qos-reliability {system_default,reliable,best_effort,unknown,best_available}]
+                      [--qos-durability {system_default,transient_local,volatile,unknown,best_available}]
+                      [--qos-liveliness {system_default,automatic,manual_by_topic,unknown,best_available}]
+                      [--qos-liveliness-lease-duration-seconds QOS_LIVELINESS_LEASE_DURATION_SECONDS]
+                      [--spin-time SPIN_TIME] [-s]
+                      topic_name message_type [values]
+
+Publish a message to a topic
+
+positional arguments:
+  topic_name            Name of the ROS topic to publish to (e.g. '/chatter')
+  message_type          Type of the ROS message (e.g. 'std_msgs/String')
+  values                Values to fill the message with in YAML format (e.g.
+                        'data: Hello World'), otherwise the message will be
+                        published with default values. You can use 'now'
+                        placeholder to get the current time and 'auto'
+                        placeholder to get a std_msgs.msg.Header with current
+                        time and empty frame_id.
+
+options:
+  -h, --help            show this help message and exit
+  --stdin               Read values from standard input
+  -r N, --rate N        Publishing rate in Hz (default: 1)
+  -p N, --print N       Only print every N-th published message (default: 1)
+  -1, --once            Publish one message and exit
+  -t TIMES, --times TIMES
+                        Publish this number of times and then exit
+  -w WAIT_MATCHING_SUBSCRIPTIONS, --wait-matching-subscriptions WAIT_MATCHING_SUBSCRIPTIONS
+                        Wait until finding the specified number of matching
+                        subscriptions. Defaults to 1 when using "-1"/"--
+                        once"/"--times", otherwise defaults to 0.
+  --max-wait-time-secs MAX_WAIT_TIME_SECS
+                        This sets the maximum wait time in seconds if --wait-
+                        matching-subscriptions is set. By default, this flag
+                        is not set meaning the subscriber will wait endlessly.
+  --keep-alive N        Keep publishing node alive for N seconds after the
+                        last msg (default: 0.1)
+  -n NODE_NAME, --node-name NODE_NAME
+                        Name of the created publishing node
+  --qos-profile {unknown,default,system_default,sensor_data,services_default,parameters,parameter_events,action_status_default,best_available}
+                        Quality of service preset profile to publish with
+                        (default: default)
+  --qos-depth N         Queue size setting to publish with (overrides depth
+                        value of --qos-profile option)
+  --qos-history {system_default,keep_last,keep_all,unknown}
+                        History of samples setting to publish with (overrides
+                        history value of --qos-profile option, default:
+                        keep_last)
+  --qos-reliability {system_default,reliable,best_effort,unknown,best_available}
+                        Quality of service reliability setting to publish with
+                        (overrides reliability value of --qos-profile option,
+                        default: Compatible profile with running endpoints )
+  --qos-durability {system_default,transient_local,volatile,unknown,best_available}
+                        Quality of service durability setting to publish with
+                        (overrides durability value of --qos-profile option,
+                        default: Compatible profile with running endpoints )
+  --qos-liveliness {system_default,automatic,manual_by_topic,unknown,best_available}
+                        Quality of service liveliness setting to publish with
+                        (overrides liveliness value of --qos-profile option
+  --qos-liveliness-lease-duration-seconds QOS_LIVELINESS_LEASE_DURATION_SECONDS
+                        Quality of service liveliness lease duration setting
+                        to publish with (overrides liveliness lease duration
+                        value of --qos-profile option
+  --spin-time SPIN_TIME
+                        Spin time in seconds to wait for discovery (only
+                        applies when not using an already running daemon)
+  -s, --use-sim-time    Enable ROS simulation time
+[exit 0]

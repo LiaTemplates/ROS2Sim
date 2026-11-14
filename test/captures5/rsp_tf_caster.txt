@@ -1,0 +1,5 @@
+$ ros2 run tf2_ros tf2_echo base_link caster_back_link
+[INFO] [1794649972.274742634] [tf2_echo]: Waiting for transform base_link ->  caster_back_link: Invalid frame ID "base_link" passed to canTransform argument target_frame - frame does not exist
+[INFO] [1794649974.261367722] [tf2_echo]: Waiting for transform base_link ->  caster_back_link: Invalid frame ID "base_link" passed to canTransform argument target_frame - frame does not exist
+[INFO] [1794649976.060201340] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[exit 124]

@@ -1,0 +1,20 @@
+$ ros2 param --help
+usage: ros2 param [-h]
+                  Call `ros2 param <command> -h` for more detailed usage. ...
+
+Various param related sub-commands
+
+options:
+  -h, --help            show this help message and exit
+
+Commands:
+  delete    Delete parameter
+  describe  Show descriptive information about declared parameters
+  dump      Show all of the parameters of a node in a YAML file format
+  get       Get parameter
+  list      Output a list of available parameters
+  load      Load parameter file for a node
+  set       Set parameter
+
+  Call `ros2 param <command> -h` for more detailed usage.
+[exit 0]

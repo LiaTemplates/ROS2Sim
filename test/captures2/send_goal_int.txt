@@ -1,0 +1,9 @@
+Waiting for an action server to become available...
+Sending goal:
+     theta: 3.0
+
+Goal accepted with ID: 0cccb155b0404fb7903dbc0338484377
+
+Canceling goal...
+Executor is already spinning
+[exit 124]

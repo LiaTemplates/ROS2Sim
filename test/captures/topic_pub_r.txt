@@ -1,0 +1,11 @@
+$ ros2 topic pub -r 2 /zahl std_msgs/msg/Int32 {data: 5}
+publisher: beginning loop
+publishing #1: std_msgs.msg.Int32(data=5)
+
+publishing #2: std_msgs.msg.Int32(data=5)
+
+publishing #3: std_msgs.msg.Int32(data=5)
+
+publishing #4: std_msgs.msg.Int32(data=5)
+
+[exit 124]

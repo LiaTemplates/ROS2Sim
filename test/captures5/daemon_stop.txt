@@ -1,0 +1,3 @@
+$ ros2 daemon stop
+The daemon has been stopped
+[exit 0]

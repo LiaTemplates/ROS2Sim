@@ -1,0 +1,20 @@
+$ ros2 bag record -a
+stdin is not a terminal device. Keyboard handling disabled.[INFO] [1794640639.923848994] [rosbag2_recorder]: Press SPACE for pausing/resuming
+[INFO] [1794640639.923854332] [rosbag2_recorder]: Event publisher thread: Started
+[INFO] [1794640639.927323739] [rosbag2_recorder]: Starting recording to 'rosbag2_2026_11_14-08_17_19'
+[INFO] [1794640639.938695230] [rosbag2_recorder]: Subscribed to topic '/rosout'
+[INFO] [1794640639.939634858] [rosbag2_recorder]: Subscribed to topic '/events/write_split'
+[INFO] [1794640639.939786881] [rosbag2_recorder]: Listening for topics...
+[INFO] [1794640639.939804543] [rosbag2_recorder]: Recording...
+[INFO] [1794640639.939939843] [rosbag2_recorder]: Topics discovery started.
+[INFO] [1794640640.374324776] [rosbag2_recorder]: Subscribed to topic '/parameter_events'
+[WARN] [1794640640.374649589] [ROSBAG2_TRANSPORT]: Hidden topics are not recorded. Enable them with --include-hidden-topics
+[INFO] [1794640640.376049593] [rosbag2_recorder]: Subscribed to topic '/chatter'
+[INFO] [1794640640.377823583] [rosbag2_recorder]: Subscribed to topic '/turtle1/color_sensor'
+[INFO] [1794640640.378470428] [rosbag2_recorder]: Subscribed to topic '/turtle1/pose'
+[INFO] [1794640644.006734863] [rosbag2_recorder]: Topics discovery stopped.
+[INFO] [1794640644.007047819] [rosbag2_recorder]: Pausing recording.
+[INFO] [1794640644.007168013] [rosbag2_cpp]: Writing remaining messages from cache to the bag. It may take a while
+[INFO] [1794640644.012934524] [rosbag2_recorder]: Recording stopped
+[INFO] [1794640644.014261539] [rosbag2_recorder]: Event publisher thread: Exited
+[exit 124]

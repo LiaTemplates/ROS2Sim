@@ -1,0 +1,10 @@
+$ ros2 action list --help
+usage: ros2 action list [-h] [-t] [-c]
+
+Output a list of action names
+
+options:
+  -h, --help           show this help message and exit
+  -t, --show-types     Additionally show the action type
+  -c, --count-actions  Only display the number of actions discovered
+[exit 0]

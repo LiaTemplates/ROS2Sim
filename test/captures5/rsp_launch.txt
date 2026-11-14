@@ -1,0 +1,4 @@
+[INFO] [launch]: All log files can be found below /home/user/.ros/log/2026-11-14-10-52-12-860848-laptop-2441577
+[INFO] [launch]: Default logging verbosity is set to INFO
+urdf_file_name : turtlebot3_burger.urdf
+[ERROR] [launch]: Caught exception in launch (see debug for traceback): launch configuration 'namespace' does not exist

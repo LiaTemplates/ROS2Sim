@@ -1,0 +1,4 @@
+$ ros2 node list
+[37;1m2026-11-14 10:49:52.408 [31;1m[[37;1mRTPS[31;1m Error] [37mCalculated port number is too high. Probably the domainId is over 232 or portBase is too high.[34;1m -> Function [36mgetMulticastPort[m
+Calculated port number is too high. Probably the domainId is over 232 or portBase is too high.
+[exit 1]

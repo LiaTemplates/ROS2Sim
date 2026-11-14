@@ -1,0 +1,4 @@
+$ ros2 topic echo /hallo
+WARNING: topic [/hallo] does not appear to be published yet
+Could not determine the type for the passed topic
+[exit 1]

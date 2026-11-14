@@ -1,0 +1,3 @@
+$ ros2 param set /turtlesim background_r 300
+Setting parameter failed: Parameter {background_r} doesn't comply with integer range.
+[exit 0]

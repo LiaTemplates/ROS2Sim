@@ -1,0 +1,12 @@
+$ ros2 action send_goal /turtle1/rotate_absolute turtlesim/action/RotateAbsolute {theta: 1.57}
+Waiting for an action server to become available...
+Sending goal:
+     theta: 1.57
+
+Goal accepted with ID: 80adec54ecdc4f81a4d490dfa5526692
+
+Result:
+    delta: -1.5520000457763672
+
+Goal finished with status: SUCCEEDED
+[exit 0]

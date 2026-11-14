@@ -1,0 +1,4 @@
+ROS_VERSION=2
+ROS_PYTHON_VERSION=3
+PWD=/home/user/ROS2Sim/test/captures5
+ROS_DISTRO=jazzy

@@ -1,0 +1,34 @@
+$ ros2 node list
+Traceback (most recent call last):
+  File "/opt/ros/jazzy/bin/ros2", line 33, in <module>
+    sys.exit(load_entry_point('ros2cli==0.32.13', 'console_scripts', 'ros2')())
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/ros/jazzy/lib/python3.12/site-packages/ros2cli/cli.py", line 91, in main
+    rc = extension.main(parser=parser, args=args)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/ros/jazzy/lib/python3.12/site-packages/ros2node/command/node.py", line 37, in main
+    return extension.main(args=args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/ros/jazzy/lib/python3.12/site-packages/ros2node/verb/list.py", line 37, in main
+    with NodeStrategy(args) as node:
+         ^^^^^^^^^^^^^^^^^^
+  File "/opt/ros/jazzy/lib/python3.12/site-packages/ros2cli/node/strategy.py", line 31, in __init__
+    if use_daemon and is_daemon_running(args):
+                      ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/ros/jazzy/lib/python3.12/site-packages/ros2cli/node/daemon.py", line 74, in is_daemon_running
+    with DaemonNode(args) as node:
+         ^^^^^^^^^^^^^^^^
+  File "/opt/ros/jazzy/lib/python3.12/site-packages/ros2cli/node/daemon.py", line 37, in __init__
+    daemon.get_xmlrpc_server_url(),
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/ros/jazzy/lib/python3.12/site-packages/ros2cli/daemon/__init__.py", line 50, in get_xmlrpc_server_url
+    address = get_address()
+              ^^^^^^^^^^^^^
+  File "/opt/ros/jazzy/lib/python3.12/site-packages/ros2cli/daemon/__init__.py", line 41, in get_address
+    return '127.0.0.1', get_port()
+                        ^^^^^^^^^^
+  File "/opt/ros/jazzy/lib/python3.12/site-packages/ros2cli/daemon/__init__.py", line 36, in get_port
+    base_port += int(os.environ.get('ROS_DOMAIN_ID') or 0)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: invalid literal for int() with base 10: 'abc'
+[exit 1]

@@ -1,0 +1,4 @@
+$ ros2 interface show turtlesim/srv/Kill
+string name
+---
+[exit 0]

@@ -1,0 +1,10 @@
+$ ros2 topic hz /chatter
+average rate: 1.000
+	min: 1.000s max: 1.000s std dev: 0.00011s window: 2
+average rate: 1.000
+	min: 1.000s max: 1.000s std dev: 0.00016s window: 4
+average rate: 1.000
+	min: 1.000s max: 1.000s std dev: 0.00021s window: 5
+average rate: 1.000
+	min: 1.000s max: 1.000s std dev: 0.00020s window: 6
+[exit 124]

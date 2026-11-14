@@ -1,0 +1,4 @@
+# vom Test erzeugt
+test/out/
+node_modules/
+__pycache__/

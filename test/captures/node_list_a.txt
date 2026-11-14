@@ -1,0 +1,5 @@
+$ ros2 node list -a
+/_ros2cli_daemon_77_6261b28bb310486084aaee9b370fc55b
+/listener
+/talker2
+[exit 0]

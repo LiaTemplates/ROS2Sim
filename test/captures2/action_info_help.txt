@@ -1,0 +1,14 @@
+$ ros2 action info --help
+usage: ros2 action info [-h] [-t] [-c] action_name
+
+Print information about an action
+
+positional arguments:
+  action_name       Name of the ROS action to get info (e.g. '/fibonacci')
+
+options:
+  -h, --help        show this help message and exit
+  -t, --show-types  Additionally show the action type
+  -c, --count       Only display the number of action clients and action
+                    servers
+[exit 0]

@@ -1,0 +1,14 @@
+
+Files:             scan2_0.mcap
+Bag size:          52.0 KiB
+Storage id:        mcap
+ROS Distro:        jazzy
+Duration:          8.049442809s
+Start:             Nov 14 2026 08:18:57.226864086 (1794640737.226864086)
+End:               Nov 14 2026 08:19:05.276306895 (1794640745.276306895)
+Messages:          51
+Topic information: Topic: /cmd | Type: geometry_msgs/msg/Twist | Count: 17 | Serialization Format: cdr
+                   Topic: /odom | Type: nav_msgs/msg/Odometry | Count: 17 | Serialization Format: cdr
+                   Topic: /scan | Type: sensor_msgs/msg/LaserScan | Count: 17 | Serialization Format: cdr
+Service:           0
+Service information: 

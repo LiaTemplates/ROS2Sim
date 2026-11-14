@@ -1,0 +1,19 @@
+usage: ros2 bag info [-h] [-s {mcap,sqlite3}] [-t] [-v]
+                     [--sort {type,name,count}]
+                     bag_path
+
+Print information about a bag to the screen
+
+positional arguments:
+  bag_path              Bag to open.
+
+options:
+  -h, --help            show this help message and exit
+  -s {mcap,sqlite3}, --storage {mcap,sqlite3}
+                        Storage implementation of bag. By default attempts to
+                        detect automatically - use this argument to override.
+  -t, --topic-name      Only display topic names.
+  -v, --verbose         Display request/response information for services
+  --sort {type,name,count}
+                        Configuration for sorting of output. By default sorts
+                        by topic name - use this argument to override.

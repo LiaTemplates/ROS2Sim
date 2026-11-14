@@ -1,0 +1,10 @@
+Waiting for an action server to become available...
+Sending goal:
+     theta: 0.0
+
+Goal accepted with ID: fbb6f77b33bf4d18bcc853418890a496
+
+Result:
+    delta: 1.2480000257492065
+
+Goal finished with status: SUCCEEDED

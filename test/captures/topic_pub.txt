@@ -1,0 +1,7 @@
+$ ros2 topic pub /hallo std_msgs/msg/String {data: 'Hi'}
+publisher: beginning loop
+publishing #1: std_msgs.msg.String(data='Hi')
+
+publishing #2: std_msgs.msg.String(data='Hi')
+
+[exit 124]

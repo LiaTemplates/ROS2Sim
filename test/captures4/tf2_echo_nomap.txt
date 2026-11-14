@@ -1,0 +1,3 @@
+[INFO] [1794644062.638178826] [tf2_echo]: Waiting for transform map ->  base_scan: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[INFO] [1794644064.623779867] [tf2_echo]: Waiting for transform map ->  base_scan: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[INFO] [1794644065.418356149] [rclcpp]: signal_handler(SIGINT/SIGTERM)

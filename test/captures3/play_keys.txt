@@ -1,0 +1,13 @@
+[0m[INFO] [1794640816.808964629] [rosbag2_player]: Set rate to 1[0m
+[0m[INFO] [1794640816.814147183] [rosbag2_player]: Adding keyboard callbacks.[0m
+[0m[INFO] [1794640816.814195365] [rosbag2_player]: Press SPACE for Pause/Resume[0m
+[0m[INFO] [1794640816.814200648] [rosbag2_player]: Press CURSOR_RIGHT for Play Next Message[0m
+[0m[INFO] [1794640816.814205253] [rosbag2_player]: Press CURSOR_UP for Increase Rate 10%[0m
+[0m[INFO] [1794640816.814210814] [rosbag2_player]: Press CURSOR_DOWN for Decrease Rate 10%[0m
+[0m[INFO] [1794640816.815414207] [rosbag2_player]: Playback until timestamp: -1[0m
+[0m[INFO] [1794640817.840987836] [rosbag2_player]: Pausing play.[0m
+[0m[INFO] [1794640818.843479194] [rosbag2_player]: Resuming play.[0m
+[0m[INFO] [1794640819.344823136] [rosbag2_player]: Set rate to 1.1[0m
+[0m[INFO] [1794640819.846561847] [rosbag2_player]: Set rate to 1[0m
+[0m[INFO] [1794640820.349499312] [rosbag2_player]: Pausing play.[0m
+[0m[INFO] [1794640822.357910619] [rosbag2_player]: Resuming play.[0m

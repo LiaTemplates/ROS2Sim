@@ -1,0 +1,15 @@
+$ ros2 bag info fahrt1
+
+Files:             fahrt1_0.mcap
+Bag size:          27.8 KiB
+Storage id:        mcap
+ROS Distro:        jazzy
+Duration:          4.575447147s
+Start:             Nov 14 2026 08:17:14.724008301 (1794640634.724008301)
+End:               Nov 14 2026 08:17:19.299455448 (1794640639.299455448)
+Messages:          292
+Topic information: Topic: /chatter | Type: std_msgs/msg/String | Count: 5 | Serialization Format: cdr
+                   Topic: /turtle1/pose | Type: turtlesim/msg/Pose | Count: 287 | Serialization Format: cdr
+Service:           0
+Service information: 
+[exit 0]

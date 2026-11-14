@@ -1,0 +1,5 @@
+$ ros2 run demo_nodes_py listener
+[INFO] [1794598968.153297086] [listener]: I heard: [Hello World: 1]
+[INFO] [1794598969.131484736] [listener]: I heard: [Hello World: 2]
+[INFO] [1794598970.130759034] [listener]: I heard: [Hello World: 3]
+[exit 124]

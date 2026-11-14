@@ -1,0 +1,3 @@
+$ ros2 service call /spawn turtlesim/srv/Spawn {z: 1}
+Failed to populate field: 'Spawn_Request' object has no attribute 'z'
+[exit 1]

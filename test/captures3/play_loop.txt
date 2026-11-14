@@ -1,0 +1,10 @@
+$ ros2 bag play fahrt1 -l
+stdin is not a terminal device. Keyboard handling disabled.[INFO] [1794640661.740319633] [rosbag2_player]: Set rate to 1
+[INFO] [1794640661.745746313] [rosbag2_player]: Adding keyboard callbacks.
+[INFO] [1794640661.745835877] [rosbag2_player]: Press SPACE for Pause/Resume
+[INFO] [1794640661.745843879] [rosbag2_player]: Press CURSOR_RIGHT for Play Next Message
+[INFO] [1794640661.745850162] [rosbag2_player]: Press CURSOR_UP for Increase Rate 10%
+[INFO] [1794640661.745858072] [rosbag2_player]: Press CURSOR_DOWN for Decrease Rate 10%
+[INFO] [1794640661.747092152] [rosbag2_player]: Playback until timestamp: -1
+[INFO] [1794640665.351453792] [rosbag2_player]: Stopping playback.
+[exit 124]

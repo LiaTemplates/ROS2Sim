@@ -1,0 +1,3 @@
+$ ros2 action list
+/turtle1/rotate_absolute
+[exit 0]
