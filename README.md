@@ -2,6 +2,7 @@
 author:   Sebastian Zug & Claude Code (Opus 5.5) mit LiaScript Teaching-Agent
 email:    sebastian.zug@informatik.tu-freiberg.de
 version:  0.5.0
+repository: https://github.com/LiaTemplates/ROS2Sim
 language: de
 narrator: Deutsch Female
 comment:  Simulierter ROS-2-Graph (Jazzy) im Browser: Terminals mit Vervollständigung, ros2-Befehle, turtlesim und Live-Graph – um Publish/Subscribe ohne Installation auszuprobieren.
@@ -71,11 +72,19 @@ Alle Terminals einer Seite teilen sich einen Graphen, wie Terminals auf einem Re
 
 __Einbinden:__
 
+Feste Version (empfohlen für Kurse, die ein Semester lang gleich bleiben sollen):
+
+```
+import: https://raw.githubusercontent.com/LiaTemplates/ROS2Sim/0.5.0/README.md
+```
+
+Immer der neueste Stand:
+
 ```
 import: https://raw.githubusercontent.com/LiaTemplates/ROS2Sim/main/README.md
 ```
 
-> Der Import-Pfad ist ein Platzhalter. Das Template liegt noch in keinem Repository.
+Quelltext: https://github.com/LiaTemplates/ROS2Sim
 
 ## Erste Schritte
 
