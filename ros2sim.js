@@ -12,7 +12,7 @@
   'use strict'
   if (root.ROS2Sim && root.ROS2Sim.version) return
 
-  const VERSION = '0.5.0'
+  const VERSION = '0.5.1'
   const help = () => {
     const h = root.ROS2SimHelp || {}
     const out = {}
@@ -4110,6 +4110,7 @@
       this.proc = null
       this.draft = ''
       this.steps = []
+      this.stepsText = ''
       this.stepIdx = 0
       this.views = new Set()
       this.host = 'laptop'
@@ -4162,6 +4163,15 @@
 
     hint (text) { this.lines.push({ t: 'ℹ ' + text, c: 'hint' }); this.notify('lines') }
     clear () { this.lines = []; this.notify('clear') }
+
+    // Befehle zum Nachmachen auf dem eigenen Rechner: vorbereitete Schritte,
+    // sonst die eingegebenen Befehle (ohne das simulationseigene help), sonst der vorbereitete Befehl
+    copyText () {
+      if (this.stepsText) return { text: this.stepsText, n: this.steps.length }
+      const cmds = this.history.filter(h => !/^\s*help(\s|$)/.test(h))
+      if (!cmds.length && this.draft && this.draft.trim()) return { text: this.draft.trim(), n: 1 }
+      return { text: cmds.join('\n'), n: cmds.length }
+    }
 
     spawn (label) {
       const p = new Proc(this, label)
@@ -4263,6 +4273,8 @@
     const steps = String(text || '').split('\n').map(x => x.trim()).filter(x => x && !x.startsWith('#'))
     if (steps.join('\n') === s.steps.join('\n')) return
     s.steps = steps
+    // für „kopieren“: die Folge so, wie sie im Kurs steht, mit Kommentaren
+    s.stepsText = String(text || '').split('\n').map(x => x.trim()).join('\n').replace(/^\n+|\n+$/g, '')
     s.stepIdx = 0
     s.notify('state')
   }
@@ -4394,6 +4406,7 @@
     <span class="r2-status" aria-live="polite"></span>
     <button class="r2-btn r2-step" hidden></button>
     <button class="r2-btn r2-ctrlc" title="Laufendes Programm beenden (Strg+C)" hidden>Strg+C</button>
+    <button class="r2-btn r2-copy" title="Befehle zum Nachmachen auf dem eigenen Rechner kopieren (ohne Prompt und Ausgabe)">⧉ kopieren</button>
     <button class="r2-btn r2-clr" title="Bildschirm leeren">clear</button></div>
   <div class="r2-screen" role="log" aria-label="${esc(title)}: Ausgabe" style="height:${rows * 1.35}em">
     <div class="r2-lines"></div>
@@ -4419,6 +4432,7 @@
         this.input.addEventListener('focus', () => this.refresh())
         this.screen.addEventListener('click', () => { if (!window.getSelection().toString()) this.input.focus({ preventScroll: true }) })
         this.$('.r2-clr').onclick = () => { s.clear(); this.input.focus() }
+        this.$('.r2-copy').onclick = () => this.copyCommands()
         this.$('.r2-ctrlc').onclick = () => { s.interrupt(this.input.value); this.input.focus() }
         this.$('.r2-step').onclick = () => {
           if (s.stepIdx < s.steps.length) { this.input.value = s.draft = s.steps[s.stepIdx]; this.input.focus(); this.refresh() }
@@ -4432,6 +4446,26 @@
       }
 
       disconnectedCallback () { if (this.sess) this.sess.views.delete(this) }
+
+      copyCommands () {
+        const btn = this.$('.r2-copy')
+        const { text, n } = this.sess.copyText()
+        const flash = (msg) => {
+          btn.textContent = msg; clearTimeout(this.copyTimer)
+          this.copyTimer = setTimeout(() => { btn.textContent = '⧉ kopieren' }, 1800)
+        }
+        if (!text) { flash('noch keine Befehle'); return }
+        const done = () => flash(n === 1 ? '✔ 1 Befehl kopiert' : `✔ ${n} Befehle kopiert`)
+        const fallback = () => {
+          const ta = document.createElement('textarea')
+          ta.value = text; ta.setAttribute('readonly', ''); ta.style.cssText = 'position:fixed;left:-9999px;top:0'
+          document.body.appendChild(ta); ta.select()
+          let ok = false; try { ok = document.execCommand('copy') } catch (e) {}
+          ta.remove(); ok ? done() : flash('Kopieren nicht erlaubt')
+        }
+        if (navigator.clipboard && window.isSecureContext) navigator.clipboard.writeText(text).then(done, fallback)
+        else fallback()
+      }
 
       // Ein „Dokument“ (z. B. frames_….pdf aus view_frames) in einem Fenster über der Seite zeigen
       openDoc (doc) {

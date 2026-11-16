@@ -771,5 +771,18 @@ test('LOCALHOST blockiert auch die Nachlieferung von /tf_static', () => {
   assert.ok(!out(a, n).includes('At time'))
 })
 
+test('kopieren: Schritte mit Kommentaren, sonst eingegebene Befehle', () => {
+  sim.reset()
+  const a = fresh('ka')
+  assert.equal(JSON.stringify(a.copyText()), JSON.stringify({ text: '', n: 0 }))
+  a.draft = 'ros2 run demo_nodes_cpp talker'
+  assert.equal(JSON.stringify(a.copyText()), JSON.stringify({ text: 'ros2 run demo_nodes_cpp talker', n: 1 }))
+  a.exec('ros2 node list'); a.exec('help'); a.exec('ros2 topic list')
+  assert.equal(JSON.stringify(a.copyText()), JSON.stringify({ text: 'ros2 node list\nros2 topic list', n: 2 }))
+  const b = fresh('kb')
+  ctx.ROS2Sim.setSteps('kb', '\n  # erst den Sender\n  ros2 run demo_nodes_cpp talker\n\n  ros2 topic list\n')
+  assert.equal(JSON.stringify(b.copyText()), JSON.stringify({ text: '# erst den Sender\nros2 run demo_nodes_cpp talker\n\nros2 topic list', n: 2 }))
+})
+
 console.log(failures ? `\n${failures} Test(s) fehlgeschlagen` : '\nAlle Tests bestanden')
 process.exit(failures ? 1 : 0)

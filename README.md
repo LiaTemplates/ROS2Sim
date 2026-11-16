@@ -1,7 +1,7 @@
 <!--
 author:   Sebastian Zug & Claude Code (Opus 5.5) mit LiaScript Teaching-Agent
 email:    sebastian.zug@informatik.tu-freiberg.de
-version:  0.5.0
+version:  0.5.1
 repository: https://github.com/LiaTemplates/ROS2Sim
 language: de
 narrator: Deutsch Female
@@ -75,7 +75,7 @@ __Einbinden:__
 Feste Version (empfohlen für Kurse, die ein Semester lang gleich bleiben sollen):
 
 ```
-import: https://raw.githubusercontent.com/LiaTemplates/ROS2Sim/0.5.0/README.md
+import: https://raw.githubusercontent.com/LiaTemplates/ROS2Sim/0.5.1/README.md
 ```
 
 Immer der neueste Stand:
@@ -101,6 +101,7 @@ Quelltext: https://github.com/LiaTemplates/ROS2Sim
 | __↑ / ↓__      | frühere Befehle                                    |
 | __Strg+C__     | laufendes Programm beenden                         |
 | __Strg+L__     | Bildschirm leeren                                  |
+| __⧉ kopieren__ | Befehle ohne Prompt und Ausgabe in die Zwischenablage, zum Nachmachen auf dem eigenen Rechner |
 
 Mit `help` zeigt das Terminal alle nachgebildeten Befehle.
 
