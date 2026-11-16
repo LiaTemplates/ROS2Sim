@@ -94,7 +94,7 @@ Quelltext: https://github.com/LiaTemplates/ROS2Sim
 2. Beende ihn mit __Strg+C__ (oder dem Knopf oben rechts).
 3. Tippe `ros2 to` und drücke __Tab__. Unten erscheinen Vorschläge mit Erklärung, darüber steht, welches Argument gerade dran ist.
 
-| Taste          | Wirkung                                            |
+| Taste / Knopf  | Wirkung                                            |
 | -------------- | -------------------------------------------------- |
 | __Tab__        | vervollständigen, zweimal: Vorschläge durchblättern |
 | __→__          | grau angezeigten Vorschlag übernehmen              |
