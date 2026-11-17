@@ -12,7 +12,7 @@
   'use strict'
   if (root.ROS2Sim && root.ROS2Sim.version) return
 
-  const VERSION = '0.5.2'
+  const VERSION = '0.5.3'
   const help = () => {
     const h = root.ROS2SimHelp || {}
     const out = {}
@@ -24,10 +24,13 @@
   // Hilfsfunktionen
   // ======================================================================
 
+  // Zeitstempel der Logzeilen: wie bei ROS streng steigend, auch mehrere Zeilen in derselben Millisekunde
+  let lastStamp = 0n
   function stamp () {
-    const ms = Date.now()
-    const nsec = (ms % 1000) * 1e6 + Math.floor(Math.random() * 1e6)
-    return Math.floor(ms / 1000) + '.' + String(nsec).padStart(9, '0')
+    let t = BigInt(Math.floor(Date.now())) * 1000000n + BigInt(Math.floor(Math.random() * 1e6))
+    if (t <= lastStamp) t = lastStamp + BigInt(20000 + Math.floor(Math.random() * 120000))
+    lastStamp = t
+    return `${t / 1000000000n}.${String(t % 1000000000n).padStart(9, '0')}`
   }
 
   function randHex (n) {

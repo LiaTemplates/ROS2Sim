@@ -1,7 +1,7 @@
 <!--
 author:   Sebastian Zug & Claude Code (Opus 5.5) mit LiaScript Teaching-Agent
 email:    sebastian.zug@informatik.tu-freiberg.de
-version:  0.5.2
+version:  0.5.3
 repository: https://github.com/LiaTemplates/ROS2Sim
 language: de
 narrator: Deutsch Female
@@ -75,7 +75,7 @@ __Einbinden:__
 Feste Version (empfohlen für Kurse, die ein Semester lang gleich bleiben sollen):
 
 ```
-import: https://raw.githubusercontent.com/LiaTemplates/ROS2Sim/0.5.2/README.md
+import: https://raw.githubusercontent.com/LiaTemplates/ROS2Sim/0.5.3/README.md
 ```
 
 Immer der neueste Stand:

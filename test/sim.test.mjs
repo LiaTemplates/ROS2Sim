@@ -798,5 +798,14 @@ test('QoS-Warnung: Wortlaut bei Sender und Empfänger wie Jazzy', () => {
   p.interrupt(); e.interrupt()
 })
 
+test('Zeitstempel der Logzeilen steigen streng (rviz2-Start)', () => {
+  sim.reset(); const a = fresh('ts')
+  const n = a.lines.length; a.exec('ros2 run rviz2 rviz2'); advance(600)
+  const ts = out(a, n).split('\n').map(l => /^\[INFO\] \[(\d+)\.(\d{9})\]/.exec(l)).filter(Boolean).map(m => BigInt(m[1]) * 1000000000n + BigInt(m[2]))
+  assert.ok(ts.length >= 4, String(ts.length))
+  for (let i = 1; i < ts.length; i++) assert.ok(ts[i] > ts[i - 1], `Zeile ${i}`)
+  a.interrupt()
+})
+
 console.log(failures ? `\n${failures} Test(s) fehlgeschlagen` : '\nAlle Tests bestanden')
 process.exit(failures ? 1 : 0)
