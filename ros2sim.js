@@ -12,7 +12,7 @@
   'use strict'
   if (root.ROS2Sim && root.ROS2Sim.version) return
 
-  const VERSION = '0.5.1'
+  const VERSION = '0.5.2'
   const help = () => {
     const h = root.ROS2SimHelp || {}
     const out = {}
@@ -791,7 +791,7 @@
         const sub = ep.kind === 'pub' ? o : ep
         const pol = qosProblem(pub.qos, sub.qos)
         if (!pol) continue
-        sub.node.log('WARN', `New publisher discovered on topic '${sub.topic}', offering incompatible QoS. No messages will be sent to it. Last incompatible policy: ${pol}`)
+        sub.node.log('WARN', `New publisher discovered on topic '${sub.topic}', offering incompatible QoS. No messages will be received from it. Last incompatible policy: ${pol}`)
         pub.node.log('WARN', `New subscription discovered on topic '${pub.topic}', requesting incompatible QoS. No messages will be sent to it. Last incompatible policy: ${pol}`)
       }
     }

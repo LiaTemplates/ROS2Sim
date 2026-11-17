@@ -784,5 +784,19 @@ test('kopieren: Schritte mit Kommentaren, sonst eingegebene Befehle', () => {
   assert.equal(JSON.stringify(b.copyText()), JSON.stringify({ text: '# erst den Sender\nros2 run demo_nodes_cpp talker\n\nros2 topic list', n: 2 }))
 })
 
+test('QoS-Warnung: Wortlaut bei Sender und Empfänger wie Jazzy', () => {
+  sim.reset()
+  const strip = (x) => x.replace(/\[\d+\.\d+\]/g, '[T]').replace(/_ros2cli_\d+/g, '_ros2cli_N')
+  const p = fresh('qp'); const e = fresh('qe')
+  p.exec('ros2 topic pub --rate 2 --qos-reliability best_effort /chatter std_msgs/msg/String "{data: hallo}"'); advance(1500)
+  const n = e.lines.length; const m = p.lines.length
+  e.exec('ros2 topic echo --qos-reliability reliable /chatter'); advance(1500)
+  const capE = fs.readFileSync(path.join(dir, 'captures6', 'qos_incompatible_echo.txt'), 'utf8').trim()
+  const capP = fs.readFileSync(path.join(dir, 'captures6', 'qos_incompatible_pub.txt'), 'utf8').trim()
+  assert.equal(strip(out(e, n)).trim(), strip(capE))
+  assert.ok(strip(out(p, m)).split('\n').includes(strip(capP)), out(p, m))
+  p.interrupt(); e.interrupt()
+})
+
 console.log(failures ? `\n${failures} Test(s) fehlgeschlagen` : '\nAlle Tests bestanden')
 process.exit(failures ? 1 : 0)
